@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flower website</title>
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!--custom css file link-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--header section starts-->
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">FLOWER <span>.</span></a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"  onclick="heart()"></a>
+        
+            <a href="#" class="fas fa-shopping-cart"  onclick="shop()"></a>
+
+            
+            <a href="#" class="fas fa-user" onclick="user()"></a> 
+           <div class="sub-menu-wrap" id="submenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="flower shop website/images/user.jpg" width="100px" height="100px" >
+                    <h3>Meriem Ben Salem</h3>
+                </div>
+                <hr>
+                <a href="" class="sub-menu-link">
+                    <img src="flower shop website/images/profile.png" alt="">
+                    <p>Edit Profile</p>
+                    <span>></span>
+                </a>
+                <a href="" class="sub-menu-link">
+                    <img src="flower shop website/images/setting.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="" class="sub-menu-link">
+                    <img src="flower shop website/images/help.png" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="" class="sub-menu-link">
+                    <img src="flower shop website/images/Logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+
+
+            </div>
+           </div>
+
+
+
+           <div class="menu-wrap" id="wrap">
+            <div class="menu">
+                <h3>Favorite List is Empty</h3>
+            </div>
+           </div>
+
+
+
+           <div class="wrap" id="menuwrap">
+            <div class="menuwrap">
+                <h3>Shopping-Cart is Empty </h3>
+            </div>
+           </div>
+        </div>
+    </header>
+    <!--header section ends-->
+    <!-- home section starts-->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Fresh flowers</h3>
+            <span>Natural & beautiful flowers</span>
+            <p>
+                In all the plants, a flower is usually the most colorful one . <br>
+                There are so many different kinds of flowers in different areas in the world. <br>
+                Even in the coldest places . <br>
+                Flowers may grow separately on the plant, or they may grow together in an inflorescence. <br>
+            </p>
+            <a href="#" class="btn">Shop now</a>
+        </div>
+    </section>
+    <!-- home section ends-->
+    <!--about section starts-->
+    <section class="about" id="about">
+        <h1 class="heading"> <span> about </span> us </h1>
+        <div class="row">
+            <div class="video-container">
+                <video src="flower shop website/images/about-vid.mp4" loop autoplay muted></video>
+                <h3>best flower sellers</h3>
+            </div>
+            <div class="content">
+                <h3>why choose us?</h3>
+                <p>At Fresh Bouquet, we believe that flowers should be an expression of your taste and desires, a collaboration of ideas, styles and colors, to give you the wedding or special event of your dreams. We believe that service is just as important as beautiful flowers, so from your complimentary consultation to the day of your event, you will be our priority. We will personally select each flower for your special day, making sure they are the perfect hue and the highest quality. Nothing gives us greater pleasure than to have a bride exclaim that her bouquet is even more beautiful than she ever imagined!</p>
+                <p>It’s our attention to the small stuff, scheduling of timelines and keen project management that makes us stand out from the rest. We are creative, while keeping a close eye on the calendar and your budget.</p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+    </section>
+    <!--about section ends-->
+    <!-- icons section starts -->
+    <section class="icons-container">
+        <div class="icons">
+            <img src="flower shop website/images/icon-1.png" alt="">
+            <div class="info">
+                <h3>FREE delivery</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="flower shop website/images/icon-2.png" alt="">
+            <div class="info">
+                <h3>10 days returs</h3>
+                <span>money back guarantee</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="flower shop website/images/icon-3.png" alt="">
+            <div class="info">
+                <h3>offer & gifts</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="flower shop website/images/icon-4.png" alt="">
+            <div class="info">
+                <h3>secure payment</h3>
+                <span>protected by paypal</span>
+            </div>
+        </div>
+    </section>
+    <!-- icons section ends -->
+    <!-- products section starts -->
+    <section class="products" id="products">
+        <h1 class="heading">Latest <span>products</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="flower shop website/images/img-1.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Pinky flower</h3>
+                    <div class="price"> 13.50 dt<span>15.99 dt</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="flower shop website/images/img-2.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Happy pot</h3>
+                    <div class="price"> 17.99 dt <span>20.00 dt</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="flower shop website/images/img-3.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Red roses</h3>
+                    <div class="price"> 15.00 dt <span>17.00dt</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="flower shop website/images/img-4.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>little joy</h3>
+                    <div class="price"> 31.99 dt <span>45.99 dt</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-17%</span>
+                <div class="image">
+                    <img src="flower shop website/images/img-5.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>White lilies</h3>
+                    <div class="price"> 27.99 dt <span>30.00 dt</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-30%</span>
+                <div class="image">
+                    <img src="flower shop website/images/img-6.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>bloody red flower</h3>
+                    <div class="price"> 13.99 dt <span>20.00 dt</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="flower shop website/images/img-7.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Pure soul </h3>
+                    <div class="price"> 14.99 dt <span>22.00 dt</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="flower shop website/images/img-8.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Love giver</h3>
+                    <div class="price"> 19.99 dt <span>35.99 dt</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-25%</span>
+                <div class="image">
+                    <img src="flower shop website/images/img-9.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>chocolat and roses</h3>
+                    <div class="price"> 12.99 dt <span>15.99 dt</span></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- products section ends -->
+    <!-- review  section starts -->
+    <section class="review" id="review">
+        <h1 class="heading"> Custom's <span>review</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>The bouquet was so beautiful and well presented thank you so much 
+                </p>
+                <div class="user">
+                    <img src="flower shop website/images/azza.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Azza Essoussi</h3>
+                        <span>satisfied customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    
+                </div>
+                <p>It is true i don't like flowers that much but i kind of changed my mind when my wife bought me a bouquet for my birthday it was lovely.
+                </p>
+                <div class="user">
+                    <img src="flower shop website/images/wael.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Wael ben aicha </h3>
+                        <span>Happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Flowers always brings happiness to my soul plus they smell amazing i would totallly recommend these fresh flowers #loving-it
+                </p>
+                <div class="user">
+                    <img src="flower shop website/images/nadia.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Nadia Jazi</h3>
+                        <span>Joyful customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    
+                </div>
+                <p>beautiful flowers .
+                </p>
+                <div class="user">
+                    <img src="flower shop website/images/rayen.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Rayen </h3>
+                        <span>okay customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Flowers are a girl's best friend plus they smell heavenly .
+                </p>
+                <div class="user">
+                    <img src="flower shop website/images/fatima.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Fa tima </h3>
+                        <span>satisfied customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    
+                </div>
+                <p>It is too bad to say that i didn't like my flowers plus they bring me bad memories . 
+                The delivery took so long and it is quite expensive
+                </p>
+                <div class="user">
+                    <img src="flower shop website/images/hamza.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Hamza Ouni</h3>
+                        <span>Angry customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>The best website for shopping flowers good job .
+                </p>
+                <div class="user">
+                    <img src="flower shop website/images/eya.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Eya Gharred</h3>
+                        <span>extremely satisfied customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    
+                </div>
+                <p>the flowers smell so good 
+                </p>
+                <div class="user">
+                    <img src="flower shop website/images/adem.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Adem gaida </h3>
+                        <span>Happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    
+                </div>
+                <p>It is true i don't like flowers that much but i kind of changed my mind when my wife bought me a bouquet for my birthday it was lovely.
+                </p>
+                <div class="user">
+                    <img src="flower shop website/images/maroua.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Maroua touhemi </h3>
+                        <span>Happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+        </div>
+    </section>
+    <!-- review section ends-->
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+        <h1 class="heading">Contact <span>us</span></h1>
+        <div class="row">
+            <form action="">
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="number" class="box">
+                <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+            <div class="image">
+                <img src="flower shop website/images/contact-img.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- contact section ends -->
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">products</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+            <div class="box">
+                <h3>Extra links</h3>
+                <a href="">my account</a>
+                <a href="">my order</a>
+                <a href="">my favorite</a>
+            </div>
+            <div class="box">
+                <h3>Locations</h3>
+                <a href="">Tunisia</a>
+                <a href="">Italia</a>
+                <a href="">China</a>
+                <a href="">Canada</a>
+            </div>
+            <div class="box">
+                <h3>contact infos</h3>
+                <a href="">+216 92 431 400</a>
+                <a href="">bensalem.meriem60@gmail.com</a>
+                <a href="">Sousse,Tunisia</a>
+                <img src="flower shop website/images/payment.png" alt="">
+            </div>
+        
+        </div>    
+        <div class="credit"> Created by <span>Meriem Ben Salem</span> |All rights reserved|</div>
+    </section>  
+  <!-- footer section ends-->
+  <!-- my picture section starts-->
+  <section class="mypic">
+    <div class="social-menu">
+        
+            
+                <a href="https://www.facebook.com/Meriem2001/" class="facebook"> 
+                    <span>Facebook</span>
+                    <svg viewBox="0 0 126.22 246"><path d="M173.6,27h35.92V70.19h-29.7c-15,2.39-14,19.79-14,19.79v29.33h47.27l-7.05,47.52H166.33V273H119.19V166.09H86.89V119.31h32.3V87.74A68.5,68.5,0,0,1,127,55.49c5.27-9.87,14-20.18,28.41-25.47A53,53,0,0,1,173.6,27Z" transform="translate(-86.89 -27)"/></svg>
+                </a>
+            
+            
+                <a href="https://twitter.com/bensalemeriem" class="twitter"> 
+                    <span>Twitter</span>
+                    <svg viewBox="0 0 245.97 198.8"><path d="M44.28,59.23S89.07,113,147.62,111C140.12,86,172.14,21.7,234,65.49c0,0,24.77-5.26,32.28-12.51,0,0-3.5,14.76-20.77,27.52,0,0-1.25,2.5,27.53-6.76,0,0-12.27,16.77-25.28,26,0,0,7.18,101-91.91,141,0,0-60.72,26.69-128.79-14,0,0,40.71,6.67,74.4-20.69,0,0-38.36-3.67-46.37-35.36,0,0,13.35,3.67,22-1,0,0-36-4-39.7-49.71,0,0,17,7.33,22.35,6.33C59.71,126.37,23.85,104.52,44.28,59.23Z" transform="translate(-27.01 -50.6)"/></svg>
+                </a>
+            
+                <a href="https://www.instagram.com/bensalem.meriem/?hl=fr/" class="instagram">
+                    <span>Instagram</span>
+                    <svg viewBox="0 0 246.15 246.15"><path d="M201,51.5A47.49,47.49,0,0,1,248.41,99V200.88A47.49,47.49,0,0,1,201,248.32H99a47.49,47.49,0,0,1-47.44-47.44V99A47.49,47.49,0,0,1,99,51.5H201m0-24.66H99A72.11,72.11,0,0,0,26.92,99V200.88A72.12,72.12,0,0,0,99,273H201a72.12,72.12,0,0,0,72.11-72.11V99A72.11,72.11,0,0,0,201,26.84Z" transform="translate(-26.92 -26.84)"/><path class="cls-1" d="M150,124.34a25.57,25.57,0,1,1-25.57,25.57A25.6,25.6,0,0,1,150,124.34m0-24.66a50.24,50.24,0,1,0,50.23,50.23A50.23,50.23,0,0,0,150,99.68Z" transform="translate(-26.92 -26.84)"/><circle class="cls-1" cx="189.98" cy="55.33" r="13.81"/></svg>
+                </a>
+            
+                <a href="https://www.linkedin.com/in/meriem-ben-salem-7071a11bb/" class="linkedin">
+                     <span>Linkedin</span>
+                     <svg viewBox="0 0 244.65 226.28"><path d="M35.73,81.63a24.22,24.22,0,0,1-8-18.5,24.59,24.59,0,0,1,8-18.79q8.06-7.47,20.76-7.48,12.43,0,20.48,7.48a24.59,24.59,0,0,1,8,18.79,24.22,24.22,0,0,1-8,18.5q-8,7.5-20.48,7.49Q43.79,89.12,35.73,81.63ZM80.5,105.51V263.14H32.2V105.51Z" transform="translate(-27.68 -36.86)"/><path d="M255.8,121.75q16.51,17.94,16.52,49.3v92.09h-48v-85.6q0-15.81-8.19-24.57t-22-8.76q-13.84,0-22,8.76t-8.2,24.57v85.6H115.53V105.51h48.31v20.9a51.15,51.15,0,0,1,19.78-16.53,63,63,0,0,1,28-6.07Q239.27,103.81,255.8,121.75Z" transform="translate(-27.68 -36.86)"/></svg>
+                </a>
+            
+    </div>
+    <div class="me">
+        <img src="flower shop website/images/me.jpg" alt="">
+    </div>
+</section>
+  <!-- my picture section ends-->
+
+
+
+  <script type="text/javascript" src="js.js"></script>
+</body>
+</html>
